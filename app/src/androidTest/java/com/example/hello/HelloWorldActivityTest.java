@@ -1,7 +1,9 @@
 package com.example.hello;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.test.ActivityInstrumentationTestCase2;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -11,7 +13,7 @@ import android.widget.TextView;
 public class HelloWorldActivityTest extends ActivityInstrumentationTestCase2<HelloWorldActivity> {
     private Activity mActivity;
     private TextView mTextView = null;
-    private TextView mTextViewLarge = null;
+    private TextView mTextViewRed = null;
 
     public HelloWorldActivityTest() {
         super(HelloWorldActivity.class);
@@ -24,8 +26,8 @@ public class HelloWorldActivityTest extends ActivityInstrumentationTestCase2<Hel
         mActivity = getActivity();
         mTextView = (TextView) mActivity
                         .findViewById(R.id.helloText);
-        mTextViewLarge = (TextView) mActivity
-                .findViewById(R.id.helloTextLarge);
+        mTextViewRed = (TextView) mActivity
+                .findViewById(R.id.helloTextRed);
     }
 
 
@@ -39,10 +41,12 @@ public class HelloWorldActivityTest extends ActivityInstrumentationTestCase2<Hel
         String actual = mTextView.getText().toString();
         assertEquals(expected, actual);
 
-        actual = mTextViewLarge.getText().toString();
+        actual = mTextViewRed.getText().toString();
         assertEquals(expected, actual);
 
-        assertEquals((float) 33.0, (float) mTextViewLarge.getTextSize());
+        Log.v("HelloWorldActivityTest", Integer.toString(mTextViewRed.getCurrentTextColor()));
+
+        assertEquals(Color.RED, mTextViewRed.getCurrentTextColor());
 
     }
 
