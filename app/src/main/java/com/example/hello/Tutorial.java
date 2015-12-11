@@ -28,15 +28,15 @@ public class Tutorial extends AppCompatActivity
 
         //You can uncomment the lines below and then run the Tutorial activity
         //
-        //textWidget = (TextView) findViewById(R.id.idTutorialText);
+        // textWidget = (TextView) findViewById(R.id.idTutorialText);
 
-        //textWidget.setText("My 1st Android Tutorial");
+        // textWidget.setText("My 1st Android Tutorial");
 
         //Get a handle to the Button widget and set its onClick listener (or
         //callback function.
 
-        //button = (Button) findViewById(R.id.idTutorialButton);
-        //button.setOnClickListener(this);
+        // button = (Button) findViewById(R.id.idTutorialButton);
+        // button.setOnClickListener(this);
     }
 
     @Override
@@ -44,8 +44,10 @@ public class Tutorial extends AppCompatActivity
 
         //Show a Toast message and set the text.
 
-        //Toast.makeText(this, "Great Job on Completing the Tutorial!", Toast.LENGTH_SHORT).show();
-        //textWidget.setText("Great Job on Completing the Tutorial!");
+        //String text = "Great Job on Completing the Tutorial!";
+
+        //Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+        //textWidget.setText(text);
 
     }
 }
