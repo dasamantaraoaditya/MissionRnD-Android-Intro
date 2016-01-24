@@ -1,0 +1,1 @@
+{"project_name":"Android-Intro","project_gitrepo":"https://github.com/mission-rnd/android-intro.git","project_page":"http://mission-rnd.github.io/android_intro.htm","language":"android","test_package":"com.example.hello","project_validator":"gradlew app:connectedAndroidTest","project_steps":["HelloWorldActivity","EchoActivity","ContactActivity","DateTimeActivity"]}
